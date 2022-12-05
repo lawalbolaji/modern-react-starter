@@ -4,7 +4,7 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 module.exports = {
   mode: "development",
   entry: {
-    bundle: path.resolve(__dirname, "src/index.js"),
+    bundle: path.resolve(__dirname, "src/index.tsx"),
   },
   output: {
     path: path.resolve(__dirname, "dist/"),
@@ -14,10 +14,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        exclude: /(node_modules|dist|bower_components)/,
+        loader: "ts-loader",
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        options: { presets: ["@babel/env", "@babel/react"] },
       },
       {
         test: /\.css$/,
@@ -26,7 +30,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   devServer: {
     open: true,
