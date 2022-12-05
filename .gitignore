@@ -1,0 +1,7 @@
+node_modules
+
+# production build
+dist
+
+# mac files
+.DS_STORE
