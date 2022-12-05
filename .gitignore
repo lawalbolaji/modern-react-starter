@@ -5,3 +5,6 @@ dist
 
 # mac files
 .DS_STORE
+
+# test files
+coverage
