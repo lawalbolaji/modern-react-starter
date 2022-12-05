@@ -1,1 +1,1 @@
-## dev tooling for react projects
+## Easily Configurable dev tooling for react projects
