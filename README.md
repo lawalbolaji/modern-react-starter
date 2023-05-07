@@ -1,1 +1,1 @@
-## Configurable dev tooling for react projects
+## react_manual_tooling
