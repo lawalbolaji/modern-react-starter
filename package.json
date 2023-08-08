@@ -64,7 +64,7 @@
     "tabWidth": 2
   },
   "scripts": {
-    "dev:start": "webpack serve --mode development",
+    "dev:start": "eslint './src/**/*.{js,jsx,ts,tsx}' && webpack serve --mode development",
     "build:ci": "eslint './src/**/*.{js,jsx,ts,tsx}' && prettier . --check './src/**/*.{js,jsx,ts,tsx}' && webpack --mode production",
     "build": "webpack --mode production"
   },
