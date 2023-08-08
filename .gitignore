@@ -1,10 +1,11 @@
+# npm packages
 node_modules
 
 # production build
 dist
 
+# editor files
+.vscode
+
 # mac files
 .DS_STORE
-
-# test files
-coverage

@@ -1,1 +1,1 @@
-## react_manual_tooling
+## Modern react starter
