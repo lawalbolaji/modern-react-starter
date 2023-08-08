@@ -11,8 +11,6 @@
     "strict": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true, // TODO: use a linter for these types of checks and let ts focus on types
-    "noUnusedParameters": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
