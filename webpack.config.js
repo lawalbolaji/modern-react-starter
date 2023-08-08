@@ -32,14 +32,14 @@ module.exports = {
   module: {
     rules: [
       {
-        // js transpilation
-        test: /\.(js|jsx)$/,
+        // js transpilation (converts ts to js as well)
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader",
       },
       {
         // css pre-processing & bundling
-        test: /\.css$/,
+        test: /\.(css)$/,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -55,7 +55,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   // TODO: add support for code splitting
   // optimization: {
