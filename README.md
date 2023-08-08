@@ -102,22 +102,22 @@ The template allows you to take advantage of more modern js apis and uses [babel
 
 The template uses [webpack](https://webpack.js.org/) to generate a minified bundle of all of your development assets, that you can run confidently in the browser. It takes advantage of webpack's hash-based bundle naming to efficiently manage client caching of your static assets in the browser.
 
-It also ships with a local development (webpack-dev-server), with hot-module-reloading and code splitting features to enhance your development experience. You can modify some of the defaults by overriding properties in the `webpack.config.js` file.
-
 > For more experienced developers, here's a feature comparison on webpack with other bundlers: `https://webpack.js.org/comparison/`
+
+It also ships with a local development (webpack-dev-server), with hot-module-reloading and code splitting features to enhance your development experience. You can modify some of the defaults by overriding properties in the `webpack.config.js` file.
 
 ```json
 {
-  "context": path.resolve(__dirname, "src"),
-  "entry": "./main.jsx",
+  "context": "project_dir",
+  "entry": "entry_file.ext",
   "output": {
-    ...
+    // ...
   },
   "devServer": {
     "port": 6674,
-    ...
+    // ...
   },
-  ...
+  // ...
 };
 
 ```
