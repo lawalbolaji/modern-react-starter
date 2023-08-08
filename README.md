@@ -1,10 +1,9 @@
-# Modern React Starter
+# Modern React Starter! ![react](https://github.com/lawalbolaji/modern-react-starter/assets/22568024/ccd898b9-c79f-4d7b-b5c5-b1612d17cd5f)
 
-This is a configurable starter template for developing modern single page applications in react. It ships with a suite of tools to support safe and scalable development, testing and deployment.
+
+This is a configurable starter template for developing modern single-page applications in React. It ships with a suite of tools to support safe and scalable development, testing and deployment. You can check out the live demo [here]("./").
 
 _Note: This project is currently in development and will continue to receive updates_\_
-
-A live demo is available [here]("./").
 
 <!-- some introduction here -->
 
@@ -12,23 +11,23 @@ A live demo is available [here]("./").
 
 ## ⚙️ Getting Started
 
-This template📓 is designed to help developers get up and running 💨 quickly when building react apps without worrying about tooling configuration or setting up regularly used dependencies, and ships with sensible defaults for a production grade app in many cases.
+This template📓 is designed to help developers get up and running 💨 quickly when building react apps without worrying about tooling configuration or setting up regularly used dependencies, and ships with sensible defaults for a production-grade app in many cases.
 
-For more experienced developers, the template exposes the configurations for the underlying toolchains so you can easily override some behaviors.
+> For more experienced developers, the template exposes the configurations for the underlying toolchains so you can easily override some behaviours.
 
-You can follow the instructions below to get started:
+Please check out the installation steps below for details on how to get started.
 
-> To run projects based on this template locally, you need to have Nodejs installed. Please refer to these [instructions](https://nodejs.org/en/download/package-manager) to setup nodejs if you don't already have it. You can run `node --version` to confirm that Nodejs is installed.
+> To run projects based on this template locally, you need to have Nodejs installed. Please refer to these [instructions](https://nodejs.org/en/download/package-manager) to set up Nodejs if you don't already have it. You can run `node --version` to confirm that Nodejs is installed.
 
 ### 📚 Installation Steps
 
-[x] Clone this repo:
+- [x] Clone this repo:
 
 ```sh
 > git clone --depth=1 git@github.com:lawalbolaji/modern-react-starter.git
 ```
 
-[x] Install the associated dependencies:
+- [x] Install the associated dependencies:
 
 > You can use any package manager that is compatible with nodejs, but npm is used here since it ships with nodejs by default and works well for most use-cases
 
@@ -36,21 +35,21 @@ You can follow the instructions below to get started:
 > npm install
 ```
 
-[x] Start a local dev server:
+- [x] Start a local dev server:
 
 ```sh
 > npm run dev:start
 ```
 
-[x] The web app should be running at `http://localhost:6674`
+- [x] The web app should be running at `http://localhost:6674`
 
-#### Using the template
+## 🪜 Using the template
 
-To use this template, follow the installation steps described above. After setting up, you can modify the src directory to meet your project specifications.
+To use this template, follow the installation steps described above. After setting up, you can modify the src directory to meet your project specifications. By default, the following resources are available to you:>
 
 ##### Available scripts
 
-[x] Run local dev server
+- [x] Run local dev server
 
 > This uses webpack-dev-server and needs to be installed alongside webpack. To override some default configuration, e.g `port`, for the server, override the `devServer` property in the `webpack.config.js file`
 
@@ -58,13 +57,13 @@ To use this template, follow the installation steps described above. After setti
 "dev:start": "eslint './src/**/*.{js,jsx,ts,tsx}' && webpack serve --mode development",
 ```
 
-[x] Compile CI build
+- [x] Compile CI build
 
 ```sh
 "build:ci": "eslint './src/**/\*.{js,jsx,ts,tsx}' && prettier . --check './src/**/\*.{js,jsx,ts,tsx}' && webpack --mode production",
 ```
 
-[x] Compile regular build
+- [x] Compile regular build
 
 ```sh
 "build": "webpack --mode production"
@@ -78,13 +77,15 @@ To use this template, follow the installation steps described above. After setti
 
 <!-- some errors that might happen if they missed some steps above -->
 
-### Tooling
+## 🛠️ Tooling
 
-#### NodeJs & NPM
+For information about the specific versions used for each package, please refer to the package.json file in the root directory of the project.
+
+### NodeJs & NPM
 
 To run projects based on this template locally, you need to have Nodejs installed. Please refer to these [instructions](https://nodejs.org/en/download/package-manager) to setup nodejs if you don't already have it. You can run `node --version` to confirm that Nodejs is installed.
 
-#### Babel
+### Babel
 
 The template allows you to take advantage of more modern js apis and uses [babel](https://babeljs.io/) to transpile the newer js syntax to backwards compatible js, across majority of environments. It uses the following presets:
 
@@ -98,7 +99,7 @@ The template allows you to take advantage of more modern js apis and uses [babel
 }
 ```
 
-#### Webpack
+### Webpack
 
 The template uses [webpack](https://webpack.js.org/) to generate a minified bundle of all of your development assets, that you can run confidently in the browser. It takes advantage of webpack's hash-based bundle naming to efficiently manage client caching of your static assets in the browser.
 
@@ -122,13 +123,12 @@ It also ships with a local development (webpack-dev-server), with hot-module-rel
 
 ```
 
-#### Typescript
+### Typescript
 
-Developing large applications with no type checking support can be a source of really nasty headaches.
-
-_(No type checking)_:
+Developing large applications with no type-checking support can be a source of really nasty headaches.
 
 ```ts
+// No type checking
 function getLowercaseValue(upperCaseText) {
   // ...do some operation on text data
 }
@@ -136,15 +136,13 @@ function getLowercaseValue(upperCaseText) {
 getLowercaseValue({}); // all hell breaks lose
 ```
 
-To address this issue, the template ships with, essentially zero-config, support for typescript.
+To address this issue, the template ships with, essentially zero-config, support for typescript. Author your beautifully structured '\*.{js,jsx,ts,tsx}' files with peace of mind, and go on to change the world, one great app at a time.
 
-Author your beautifully structured '\*.{js,jsx,ts,tsx}' files with peace of mind, and go on to change the world, one great app at a time.
-
-#### Eslint
+### Eslint
 
 The template is highly opinionated and enforces certain linting rules for your application using [eslint](https://eslint.org/).
 
-#### Prettier
+### Prettier
 
 This template enforces the use of prettier for formatting code and ensuring consistent styling across the project, based on preferences specified here:
 
