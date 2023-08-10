@@ -40,7 +40,7 @@ module.exports = {
       {
         // css pre-processing & bundling
         test: /\.(css)$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         // image assets
