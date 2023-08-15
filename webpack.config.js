@@ -57,6 +57,7 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
+  stats: "errors-only",
   // TODO: add support for code splitting
   // optimization: {
   //   runtimeChunk: "single",
