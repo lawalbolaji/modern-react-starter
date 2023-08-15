@@ -13,55 +13,9 @@
       "@babel/preset-typescript"
     ]
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "browser": true,
-      "commonjs": true,
-      "es2021": true,
-      "worker": true,
-      "node": true
-    },
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-      "requireConfigFile": false,
-      "ecmaVersion": "latest",
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "babelOptions": {
-        "babelrc": false,
-        "configFile": false,
-        "presets": [
-          "@babel/preset-env",
-          "@babel/preset-react",
-          "@babel/preset-typescript"
-        ]
-      }
-    },
-    "globals": {
-      "React": "readonly"
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended"
-    ],
-    "rules": {},
-    "plugins": [
-      "@babel",
-      "react",
-      "react-hooks"
-    ],
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
-    }
-  },
   "prettier": {
-    "tabWidth": 2
+    "tabWidth": 2,
+    "printWidth": 120
   },
   "scripts": {
     "dev:start": "eslint './src/**/*.{js,jsx,ts,tsx}' && webpack serve --mode development",
@@ -73,13 +27,13 @@
   "devDependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.10",
-    "@babel/eslint-parser": "^7.22.10",
-    "@babel/eslint-plugin": "^7.22.10",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.22.5",
     "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
@@ -99,6 +53,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "nanoid": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2"
