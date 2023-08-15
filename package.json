@@ -21,7 +21,7 @@
     "dev:start": "npm run lint && webpack serve --mode development",
     "build:ci": "npm run lint && prettier . --check './src/**/*.{js,jsx,ts,tsx}' && webpack --mode production",
     "build": "webpack --mode production",
-    "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'"
+    "lint": "eslint './src/**/*.{js,jsx,ts,tsx}' --max-warnings 0"
   },
   "keywords": [],
   "license": "ISC",
