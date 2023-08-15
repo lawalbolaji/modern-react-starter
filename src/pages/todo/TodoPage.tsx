@@ -9,7 +9,7 @@ TODOS:
 - add dark mode
 */
 
-export function TodoScene() {
+export function TodoPage() {
   useInitTodos();
 
   return (

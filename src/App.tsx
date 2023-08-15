@@ -1,4 +1,4 @@
-import { TodoScene } from "./pages/todo/TodoPage";
+import { TodoPage } from "./pages/todo/TodoPage";
 
 /* 
 TODOS:
@@ -9,5 +9,5 @@ TODOS:
 */
 
 export function App() {
-  return <TodoScene />;
+  return <TodoPage />;
 }
