@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { AppDispatch, loadTodos } from "../store";
+import { AppDispatch } from "../store";
+import { loadTodos } from "../pages/todo/TodoPageSlice";
 
 export function useInitTodos() {
   const dispatch = useDispatch<AppDispatch>();

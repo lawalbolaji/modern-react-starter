@@ -1,5 +1,6 @@
-import { AppDispatch, Todo, updateTodo } from "../../store";
 import { useDispatch } from "react-redux";
+import { Todo, updateTodo } from "../../pages/todo/TodoPageSlice";
+import { AppDispatch } from "../../store";
 
 interface ResizableInputProps {
   todo: Todo;

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Todo, AppDispatch, updateTodo, deleteTodo } from "../../../../store";
+import { AppDispatch } from "../../../../store";
 import { AnimatedFavBtn } from "../../../custom/AnimatedFavBtn";
 import { DeleteButtonWithIcon } from "../../../custom/DeleteButtonWithIcon";
 import { ResizableInput } from "../../../custom/ResizableInput";
+import { Todo, updateTodo, deleteTodo } from "../../../../pages/todo/TodoPageSlice";
 
 export function TodoItem(props: { todo: Todo }) {
   const { todo } = props;

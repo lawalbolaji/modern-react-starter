@@ -1,8 +1,9 @@
 import { nanoid } from "nanoid";
-import { AppDispatch, RootState, createTodo, selectTodoIdsByChecked } from "../../../store";
+import { AppDispatch, RootState } from "../../../store";
 import { useDispatch, useSelector } from "react-redux";
 import { CreateNewTodo } from "../create_todo";
 import { TodoItem } from "./todo_item";
+import { selectTodoIdsByChecked, createTodo } from "../../../pages/todo/TodoPageSlice";
 
 export function RenderTodos() {
   const dispatch = useDispatch<AppDispatch>();
