@@ -1,17 +1,13 @@
-import { useState } from "react";
+import { TodoScene } from "./pages/todo/TodoPage";
 
-function App() {
-  const [count, setCount] = useState(0);
+/* 
+TODOS:
+- add tests for data CRUD layer
+- add routes for - /all?before=[]&after=[]&fav=true
 
-  return (
-    <>
-      <div className="text-3xl font-bold underline">Counter: {count}</div>
-      <div>
-        <button onClick={() => setCount((c) => c + 1)}>+</button>
-        <button onClick={() => setCount((c) => c - 1)}>-</button>
-      </div>
-    </>
-  );
+- add dark mode
+*/
+
+export function App() {
+  return <TodoScene />;
 }
-
-export default App;
