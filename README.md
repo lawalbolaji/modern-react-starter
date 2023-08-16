@@ -1,9 +1,7 @@
 # Modern React Starter! ![react](https://github.com/lawalbolaji/modern-react-starter/assets/22568024/ccd898b9-c79f-4d7b-b5c5-b1612d17cd5f)
 
 
-This is a configurable starter template for developing modern single-page applications in React. It ships with a suite of tools to support safe and scalable development, testing and deployment. You can check out the live demo [here]("./").
-
-_Note: This project is currently in development and will continue to receive updates_\_
+This is a configurable starter template for developing modern single-page applications in React. It ships with a suite of tools to support scalable development and testing.
 
 <!-- some introduction here -->
 
@@ -43,9 +41,10 @@ Please check out the installation steps below for details on how to get started.
 
 - [x] The web app should be running at `http://localhost:6674`
 
+
 ## 🪜 Using the template
 
-To use this template, follow the installation steps described above. After setting up, you can modify the src directory to meet your project specifications. By default, the following resources are available to you:>
+After setting up, you'll find that this template ships with some boilerplate code for a small todo application, feel free to delete this as required. By default, the following resources are available to you:>
 
 ##### Available scripts
 
