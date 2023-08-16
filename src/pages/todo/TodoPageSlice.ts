@@ -111,7 +111,23 @@ export const todoSlice = createSlice({
   },
 });
 
+export type OptionalKeys<T> = {
+  [key in keyof T]?: T[key];
+};
+
 export const { selectById: selectTodoById, selectAll } = todoAdapter.getSelectors((state: RootState) => state.todo);
-export const selectTodoIdsByChecked = createSelector([selectAll, (state, checked) => checked], (todos, checked) =>
-  todos.filter((todo) => todo.checked === checked),
+export const selectTodoIdsByFilter = createSelector(
+  [
+    selectAll,
+    (_, searchFilter: { before?: string; after?: "today"; checked?: boolean; fav?: boolean }) => searchFilter,
+  ],
+  (todos, searchFilter) =>
+    todos.filter(
+      (todo) =>
+        (searchFilter.checked === undefined || todo.checked === searchFilter.checked) &&
+        (searchFilter.before === undefined || new Date(todo.createdAt) < new Date(searchFilter.before)) &&
+        (searchFilter.after === undefined ||
+          (searchFilter.after === "today" && +new Date(todo.createdAt) > new Date().setHours(1, 0, 0, 0))) &&
+        (searchFilter.fav === undefined || todo.favorite === searchFilter.fav),
+    ),
 );

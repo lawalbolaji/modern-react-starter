@@ -18,7 +18,7 @@ export function CreateNewTodo({ onTodoCreated, label }: CreateNewTodoProps) {
               setNewVal(e.currentTarget.value);
             }}
             onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
-              if (e.key === "Enter") {
+              if (e.key === "Enter" && newVal.length > 0) {
                 onTodoCreated(newVal);
                 setNewVal("");
               }
