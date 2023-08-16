@@ -1,6 +1,6 @@
 const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require("webpack");
+// const webpack = require("webpack");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
@@ -16,9 +16,9 @@ module.exports = {
     new htmlWebpackPlugin({
       template: "../index.html",
     }),
-    new webpack.ProvidePlugin({
-      React: "react",
-    }),
+    // new webpack.ProvidePlugin({
+    //   React: "react",
+    // }),
   ],
   devServer: {
     port: 6674,
@@ -53,6 +53,7 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+    strictExportPresence: true,
   },
   resolve: {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
