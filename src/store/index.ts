@@ -5,7 +5,7 @@ const rootReducer = combineReducers({
   todo: todoSlice.reducer,
 });
 
-export const setupStore = (preloadedState: PreloadedState<RootState>) =>
+export const setupStore = (preloadedState?: PreloadedState<RootState>) =>
   configureStore({
     reducer: rootReducer,
     preloadedState,
